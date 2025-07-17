@@ -1,76 +1,74 @@
 # 🐢 Week 3, Lesson 1: Build a Python Turtle Game with GitHub Copilot
 
-## Welcome to your first game with Turtle!
+## Welcome to Your First Game with Turtle!
 
-You're about to dive into **Turtle**, a built-in Python library that helps you create simple, fun games with colorful graphics using just code! This lesson will guide you step-by-step to bring your ideas to life and share them with others.
+You're about to explore **Turtle**, a simple yet powerful Python library that helps you create fun, graphical games using code. This lesson will guide you step-by-step from basics to building and sharing your very own game!
 
-## 🎯 What You'll Do
+## 🎯 Lesson Objectives
 
 By the end of this lesson, you'll be able to:
 
-- **Create your first animated game** - Build a working game using Python Turtle and GitHub Copilot
-- **Master GitHub collaboration** - Share your project and give feedback like a pro developer
+- **Create an animated Turtle game** using Python and GitHub Copilot.
+- **Collaborate on GitHub** by sharing your project and giving constructive feedback.
 
 ## 🛠️ Setup Checklist
 
-This time, you’ll be working locally instead of in the cloud. That means using Visual Studio Code and cloning your project to your own computer.
+You’ll be using **Visual Studio Code** and working locally. Follow these steps:
 
-**Step 1: Get Python**
+### Step 1: Install Python
 
-- Go to the Windows Store and install **Python 3.13**
-- OR open the command line and type `python` (it'll take you to the installation page automatically!)
+- Visit the **Windows Store** and install **Python 3.13**.
+- Or type `python` in your command line and follow prompts to install.
 
-**Step 2: Download Your Code Editor**
+### Step 2: Install Visual Studio Code
 
-- Download and install **Visual Studio Code** from the Windows Store
+- Download and install **Visual Studio Code** from the Windows Store.
 
-**Step 3: Connect to Your Project**
+### Step 3: Clone Your Project
 
-- Open Visual Studio Code
-- Go to **Source Control** > **Clone** (under the three dots)
-- Follow the instructions to fork and clone the repository
+- Open VS Code.
+- Click **Source Control** > **Clone Repository** (under the three dots).
+- Follow instructions to fork and clone your repository.
 
-**Step 4: Add Your AI Coding Assistant**
+### Step 4: Add GitHub Copilot
 
-- In VS Code, click the Extensions icon
-- Search for **"GitHub Copilot"** and install it
+- Open the Extensions panel in VS Code.
+- Search for **"GitHub Copilot"** and click **Install**.
 
-**Step 5: Add Python Support**
+### Step 5: Add Python Support
 
-- Still in Extensions, search for **"Python"** and install it
+- In Extensions, search for **"Python"** and install it.
 
-**Step 6: Test Everything Works**
+### Step 6: Verify Installation
 
-- Open the terminal in Visual Studio Code
-- Type `python` and press Enter
-- If you see Python starting up — you’re good to go!
+- Open a terminal in VS Code.
+- Type `python` and press Enter.
+- If Python starts, you're ready!
 
+> Turtle is already included in Python—no extra installs required!
 
+## 🐢 Turtle Basics
 
-> No extra installs needed — Turtle comes built into Python!
+Open `app.py` and practice these foundational steps:
 
-## 🐢 Learn the Basics of Turtle
-
-Before you build your own game, let’s learn a few basics about how Turtle works in Python. Open `app.py` and follow these steps to try things out.
-
-### 🐢 Step 1: Import and Create a Turtle
+### Step 1: Import and Set Up Turtle
 
 ```python
 import turtle
 
-wn = turtle.Screen()  # Creates the game window
-player = turtle.Turtle()  # Creates a turtle
+wn = turtle.Screen()  # Game window
+player = turtle.Turtle()  # Your turtle
 ```
 
-### 🎨 Step 2: Customize the Turtle
+### Step 2: Customize Your Turtle
 
 ```python
-player.shape("turtle")     # Changes the shape
-player.color("blue")       # Changes the color
-player.speed(1)            # Sets movement speed
+player.shape("turtle")  # Turtle shape
+player.color("blue")    # Turtle color
+player.speed(1)         # Movement speed
 ```
 
-### 🔄 Step 3: Move the Turtle Around
+### Step 3: Move the Turtle
 
 ```python
 player.forward(100)  # Move forward
@@ -78,15 +76,15 @@ player.right(90)     # Turn right
 player.forward(100)
 ```
 
-### 🧠 Step 4: Use Functions and Loops
+### Step 4: Loops and Shapes
 
 ```python
 for _ in range(4):
     player.forward(100)
-    player.right(90)  # Draws a square
+    player.right(90)  # Draw square
 ```
 
-### 🕹️ Step 5: Add User Input
+### Step 5: User Input
 
 ```python
 def move_up():
@@ -95,64 +93,73 @@ def move_up():
 
 wn.listen()
 wn.onkey(move_up, "Up")
-wn.mainloop()  # Keeps the window open
+wn.mainloop()  # Keeps window open
 ```
 
-> Now you're ready to build your own game!
+## 🚀 GitHub Copilot Editor Suggestions
+
+To use GitHub Copilot’s inline suggestions in VS Code:
+
+1. Open your Python file (`app.py`) in VS Code.
+2. Press `Ctrl + I` (or `Cmd + I` on Mac) to open the GitHub Copilot inline editor.
+3. Type one of these prompts into the inline editor to generate code:
+
+- "Make the turtle move smoothly with arrow keys"
+- "Draw random objects on the screen"
+- "Detect collision between objects"
+- "Keep score in the game"
+- "End game when a condition is met"
+
+> These suggestions will help Copilot generate useful functions for your game!
 
 ## 🕹️ Choose Your Turtle Game!
 
-Open [app.py](/lesson-2/app.py) and use these prompts with GitHub Copilot. **Important:** Test your game after each prompt to see your progress!
+Open [app.py](/lesson-2/app.py). Use these Copilot prompts to build your game step by step:
 
-| 🐢 Game                | 🎯 What You'll Build                               | 🚀 Step-by-Step Prompts                                                                                          |
-| ---------------------- | -------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
-| **🏃 Dodge the Dots**  | Move your turtle and avoid falling obstacles       | 1. "Draw a turtle and falling dots"2. "Move turtle with arrow keys"3. "End game when turtle hits a dot"          |
-| **🍎 Catch the Apple** | Catch falling apples using your turtle as a basket | 1. "Draw a turtle and falling apple"2. "Move turtle left/right"3. "Detect when turtle catches apple"             |
-| **💥 Turtle Chase**    | Chase and tag a moving target using your turtle    | 1. "Draw two turtles"2. "Make one move randomly"3. "Move the player turtle with arrow keys and detect collision" |
-| **🧱 Simple Breakout** | Break a wall of bricks with a bouncing turtle ball | 1. "Draw bricks, paddle, and turtle ball"2. "Bounce turtle off paddle"3. "Remove bricks when hit"                |
+| 🐢 Game                | 🎯 What You'll Build                        | 🚀 Step-by-Step Prompts                                                                                 |
+| ---------------------- | ------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
+| **🏃 Dodge the Dots**  | Move your turtle to avoid falling obstacles | 1. "Draw turtle and falling dots" 2. "Move turtle with arrow keys" 3. "End game when turtle hits a dot" |
+| **🍎 Catch the Apple** | Catch apples using your turtle as a basket  | 1. "Draw turtle and falling apple" 2. "Move turtle left/right" 3. "Detect when turtle catches apple"    |
+| **💥 Turtle Chase**    | Chase and tag a moving target               | 1. "Draw two turtles" 2. "Make one move randomly" 3. "Control player turtle and detect collision"       |
+| **🧱 Simple Breakout** | Break bricks with a bouncing turtle ball    | 1. "Draw bricks, paddle, and ball" 2. "Bounce ball off paddle" 3. "Remove bricks when hit"              |
 
-> **💡 Pro Tip:** Turtle is slower than Pygame, but great for beginners. Run your game after each change to see it evolve!
+> **💡 Pro Tip:** Turtle is great for beginners. Always run your game after each prompt to check progress!
 
-## How to run your game
+## ▶️ Running Your Game
 
-You have two easy options:
+You have two options to run your game:
 
-### ▶️ Option 1: Use the Play Button in VS Code
+### Option 1: VS Code Play Button
 
-- Open `app.py`
-- Click the green **Run** or **Play** button in the top right corner
-- Your game will open in a new window!
+- Open `app.py`.
+- Click the green **Run** button in the top right.
 
-### 💻 Option 2: Use the Terminal
-
-In the terminal, type the following commands:
+### Option 2: Terminal
 
 ```bash
 cd lesson-2
 python app.py
 ```
 
-## 🔎 Share, Collaborate, and Review in GitHub
+## 🔎 Share & Collaborate with GitHub
 
-Just like real developers, you’ll use GitHub to share, improve, and review your code.
+Use GitHub to improve your game through collaboration:
 
-### Step 1: Commit & Push Your Game in the Editor
+### Commit and Push
 
-1. Open the Source Control panel in VS Code. You should see your changes listed.
-2. Add a message like: "First version of my Turtle game".
-3. Click Commit and then Sync to upload your code.
+- Open **Source Control** in VS Code.
+- Type a commit message (e.g., "First Turtle game version").
+- Commit and sync your changes.
 
-### Step 2: Try Someone Else's Game
+### Try Another Game
 
-1. Ask a classmate for their GitHub repo link.
-2. Clone it using VS Code.
-3. Open and play their game.
-4. Take notes on what works well and what could be improved.
+- Clone a classmate's GitHub repository.
+- Open and play their game.
+- Note what you like and suggest improvements.
 
-### Step 3: Leave Feedback via GitHub Issues
+### Leave Feedback
 
-1. On their GitHub page, click the **Issues** tab → **New Issue**.
-2. Write clear, helpful feedback in the Description.
-3. Use the Title to briefly summarize your comment.
+- Go to their GitHub page, click **Issues** → **New Issue**.
+- Provide specific, helpful feedback.
 
-> Feedback is how real teams improve! Be kind, be honest, be specific.
+> Great collaboration makes great games. Be kind, honest, and specific!
