@@ -11,41 +11,11 @@ By the end of this lesson, you'll be able to:
 - **Create an animated Turtle game** using Python and GitHub Copilot.
 - **Collaborate on GitHub** by sharing your project and giving constructive feedback.
 
-## 🛠️ Setup Checklist
+## � Getting Started
 
-You’ll be using **Visual Studio Code** and working locally. Follow these steps:
+**Recommended:** Use GitHub Codespaces for the best experience - it's pre-configured and ready to go!
 
-### Step 1: Install Python
-
-- Visit the **Windows Store** and install **Python 3.13**.
-- Or type `python` in your command line and follow prompts to install.
-
-### Step 2: Install Visual Studio Code
-
-- Download and install **Visual Studio Code** from the Windows Store.
-
-### Step 3: Clone Your Project
-
-- Open VS Code.
-- Click **Source Control** > **Clone Repository** (under the three dots).
-- Follow instructions to fork and clone your repository.
-
-### Step 4: Add GitHub Copilot
-
-- Open the Extensions panel in VS Code.
-- Search for **"GitHub Copilot"** and click **Install**.
-
-### Step 5: Add Python Support
-
-- In Extensions, search for **"Python"** and install it.
-
-### Step 6: Verify Installation
-
-- Open a terminal in VS Code.
-- Type `python` and press Enter.
-- If Python starts, you're ready!
-
-> Turtle is already included in Python—no extra installs required!
+## 🐢 Turtle Basics
 
 ## 🐢 Turtle Basics
 
@@ -163,3 +133,6 @@ Use GitHub to improve your game through collaboration:
 - Provide specific, helpful feedback.
 
 > Great collaboration makes great games. Be kind, honest, and specific!
+
+### Running VSCode Locally
+**Alternative:** If you prefer to work locally, see our [📋 Local VS Code Setup Guide](local-setup.md) for Windows installation instructions.
